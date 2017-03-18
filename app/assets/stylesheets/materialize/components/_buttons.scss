@@ -1,6 +1,7 @@
 // shared styles
 .btn,
-.btn-flat {
+.btn-flat,
+.btn-hollow {
   border: $button-border;
   border-radius: $button-radius;
   display: inline-block;
@@ -16,6 +17,7 @@
 // Disabled shared style
 .btn.disabled,
 .btn-floating.disabled,
+.btn-hollow.disabled,
 .btn-large.disabled,
 .btn-flat.disabled,
 .btn:disabled,
@@ -42,7 +44,8 @@
 .btn,
 .btn-floating,
 .btn-large,
-.btn-flat {
+.btn-flat,
+.btn-hollow {
 
   outline: 0;
 
@@ -54,6 +57,7 @@
 
 // Shared focus button style
 .btn,
+.btn-hollow,
 .btn-floating {
   &:focus {
     background-color: darken($button-raised-background, 10%);
@@ -131,6 +135,24 @@
     color: $button-floating-color;
     font-size: $button-large-icon-font-size;
     line-height: $button-floating-size;
+  }
+}
+
+// Hollow button
+.btn-hollow {
+  border-radius: 0;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  text-align: center;
+  letter-spacing: .5px;
+  @extend .z-depth-1;
+  transition: .2s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-raised-background-hover;
+    @extend .z-depth-1-half;
   }
 }
 
