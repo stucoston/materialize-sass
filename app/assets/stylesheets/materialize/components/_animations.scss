@@ -1,0 +1,61 @@
+.animate-opacity {
+  -webkit-animation:opac 2s;
+  animation:opac 2s;
+}
+
+.animate-opacity-long {
+  -webkit-animation:opac 3s;
+  animation:opac 3s;
+}
+
+.animate-opacity-reverse {
+  -webkit-animation:opacrev 2s;
+  animation:opacrev 2s;
+}
+
+.animate-opacity-reverse-long {
+  -webkit-animation:opacrev 3s;
+  animation:opacrev 3s;
+}
+
+@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+@-webkit-keyframes opacrev{from{opacity:1} to{opacity:0}}
+@keyframes opacrev{from{opacity:1} to{opacity:0}}
+
+.animate-top {
+  position:relative;
+  -webkit-animation:animatetop 0.4s;
+  animation:animatetop 0.4s; 
+}
+
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+.animate-left {
+  position:relative;
+  -webkit-animation:animateleft 0.4s;
+  animation:animateleft 0.4s;
+}
+
+@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.animate-right {
+  position:relative;
+  -webkit-animation:animateright 0.4s;
+  animation:animateright 0.4s;
+}
+
+@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.animate-bottom {
+  position:relative;
+  -webkit-animation:animatebottom 0.4s;
+  animation:animatebottom 0.4s;
+}
+
+@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
