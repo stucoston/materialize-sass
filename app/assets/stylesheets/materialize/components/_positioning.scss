@@ -80,3 +80,30 @@
   -webkit-transform:rotate(90deg);
   -ms-transform:rotate(90deg);
 }
+
+.screen-height,
+.screen-size {
+  height: 100vh
+}
+
+.screen-width,
+.screen-size {
+  height: 100vw
+}
+
+.full-height,
+.full-size {
+  height:100%
+}
+
+.full-width,.full-size {
+  width: 100%
+}
+
+.half-height,.half-size {
+  height: 50%
+}
+
+.half-width,.half-size {
+  width: 50%
+}
