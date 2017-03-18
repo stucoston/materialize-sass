@@ -59,3 +59,41 @@ small { font-size: 75%; }
     font-size: 1.2rem;
   }
 }
+
+.text-tiny {
+  font-size:10px!important
+}
+
+.text-small {
+  font-size:12px!important
+}
+
+.text-medium {
+  font-size:15px!important
+}
+
+.text-large {
+  font-size:18px!important
+}
+.text-xlarge {
+  font-size:24px!important
+}
+
+.text-xxlarge {
+  font-size:36px!important
+}
+
+.text-xxxlarge {
+  font-size:48px!important
+}
+
+.text-jumbo {
+  font-size:64px!important
+}
+
+.text-vertical {
+  word-break:break-all;
+  line-height:1;
+  text-align:center;
+  width:0.6em
+}
